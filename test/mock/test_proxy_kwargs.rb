@@ -33,6 +33,8 @@ class TestMockProxyKwargs < Test::Unit::TestCase
     obj1 = klass.new
     obj2 = klass.new
     proxy.mock(obj2).call.with_any_args
+    p RR::KeywordArguments.fully_supported?
+    p RUBY_ENGINE
     if data[:style] == :hash && RR::KeywordArguments.fully_supported?
       assert_raise(ArgumentError) do
         obj1.call(1, {a: 2})
