@@ -1,6 +1,5 @@
 # encoding: utf-8
 
-require 'rake'
 require File.expand_path('../lib/rr/version', __FILE__)
 
 Gem::Specification.new do |gem|
