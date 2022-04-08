@@ -23,7 +23,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "${{ matrix.ruby-version }}"
-      - run: bundle install
+          bundler-cache: true
       - run: bundle exec rake test
 
   integration:
@@ -42,5 +42,5 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.0"
-      - run: bundle install
+          bundler-cache: true
       - run: bundle exec rake test
