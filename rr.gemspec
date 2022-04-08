@@ -13,7 +13,6 @@ Gem::Specification.new do |gem|
   gem.license = 'MIT'
 
   gem.files = FileList[
-    'Appraisals',
     'CHANGES.md',
     'CREDITS.md',
     'Gemfile',
@@ -21,10 +20,8 @@ Gem::Specification.new do |gem|
     'README.md',
     'Rakefile',
     'doc/*.md',
-    'gemfiles/**/*',
     'lib/**/*.rb',
-    'rr.gemspec',
-    'spec/**/*'
+    'rr.gemspec'
   ].to_a
 
   gem.require_paths = ['lib']
