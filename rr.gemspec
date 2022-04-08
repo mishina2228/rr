@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.homepage = 'https://rr.github.io/rr'
   gem.license = 'MIT'
 
-  gem.files = FileList[
+  gem.files = Dir[
     'CHANGES.md',
     'CREDITS.md',
     'Gemfile',
