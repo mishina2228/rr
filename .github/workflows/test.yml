@@ -17,7 +17,6 @@ jobs:
           - "3.0"
           - "3.1"
           - "head"
-          - "truffleruby-22.0.0.2"
           - "truffleruby-head"
     steps:
       - uses: actions/checkout@v2
